@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="Content-Script-Type" content="text/javascript">
+    <meta name="robots" content="noindex,nofollow">
+    <meta name="viewport" content="width=1280,user-scalable=no">
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <title></title>
+    <link rel="stylesheet" href="common/css/q-reset.css">
+    <link rel="stylesheet" href="common/css/new_style.css">
+    <script src="common/js/jquery-2.2.4.min.js"></script>
+    <script src="common/js/run.js"></script>
+</head>
+
+<body>
+    <main id="main">
+        <nav id="nav">
+            <ul>
+                <li class="index"><a href="index.html">Introducción</a></li>
+                <li class="page02"><a href="page02.html">Controles</a></li>
+                <li class="page03"><a href="page03.html">Pantalla de la zona</a></li>
+                <li class="page04"><a href="page04.html">Acciones</a></li>
+                <li class="page05"><a href="page05.html">Lente Yo-kai</a></li>
+                <li class="page06"><a href="page06.html">Menú principal</a></li>
+                <li class="page07"><a href="page07.html">Estado de los Yo-kai</a></li>
+                <li class="page08"><a href="page08.html">Combates: Desarrollo</a></li>
+                <li class="page09"><a href="page09.html">Combates: Dar ordenes</a></li>
+                <li class="page10"><a href="page10.html">Usar servicios</a></li>
+                <li class="page11"><a href="page11.html">Servicios especiales</a></li>
+                <li class="page12"><a href="page12.html">Multijugador y NFC</a></li>
+                <li class="page13"><a href="page13.html">Información de contacto</a></li>
+            </ul>
+        </nav>
+        <article id="article" data-page="page09">
+            <div class="wrap">
+                <header id="header">
+                    <h1>Combates: Dar ordenes</h1>
+                </header>
+                <div id="inner">
+                    <section class="sec">
+                        <p class="txt">Aquí se explica cómo dar órdenes durante los combates.</p>
+                        <h2>Opción: Animáximum</h2>
+                        <div class="flxBox">
+                            <div>
+                                <p class="txt">Te permite usar el animáximum de un Yo-kai. Selecciona un Yo-kai que tenga el animámetro lleno y sigue las instrucciones que aparezcan en pantalla. Cuando el indicador esté lleno, tu Yo-kai liberará un animáximum.
+</p>
+                            </div>
+                            <img src="./common/img/09_01.png" class="deco" alt="">
+                        </div>
+                    </section>
+                    <section class="sec">
+                        <h2>Opción: Purificar</h2>
+                        <div class="flxBox">
+                            <div>
+                                <p class="txt mb10">Los Yo-kai espiritados por enemigos sufrirán todo tipo de efectos negativos. Puedes curar a un Yo-kai si lo mueves a la parte posterior y utilizas la opción "Purificar". Sigue las instrucciones que veas en pantalla para purificar a un Yo-kai.</p>
+                                <p class="notice">※ Cuando las purificaciones funcionen, tus Yo-kai también recibirán puntos de experiencia.</p>
+                            </div>
+                            <img src="common/img/09_02.png" class="deco" alt="">
+                        </div>
+                    </section>
+                    <section class="sec">
+                        <h2>Opción: Objetivo</h2>
+                        <div class="flxBox">
+                            <div>
+                                <p class="txt">Te permite colocar un marcador sobre el enemigo en el que quieres centrar tus ataques. Mueve la lente Yo-kai para situarla sobre un Yo-kai enemigo y, a continuación, pulsa Ⓐ para colocar un marcador sobre él. En el caso de los jefes, es posible colocar el marcador en diferentes partes de sus cuerpos.</p>
+                            </div>
+                            <img src="common/img/09_03.png" class="deco" alt="">
+                        </div>
+                        <h3>Quitar marcador</h3>
+                        <p class="txt">Selecciona "Quitar marcador" para eliminar un marcador, o mueve la lente hacia un punto donde no haya enemigos Yo-kai y pulsa Ⓐ.</p>
+                        <div class="notice__wrap">
+                            <p class="column_ttl">Espiriesfera</p>
+                            <p class="txt">Si ves una esfera brillante durante un combate, ¡trata de marcarla! Se trata de una espiresfera. No se quedará ahí durante mucho tiempo, así que ¡marca una para ver qué esconde!</p>
+                        </div>
+                    </section>
+                    <section class="sec">
+                        <h2>Opción: Objetos</h2>
+                        <div class="flxBox">
+                            <div>
+                                <p class="txt">Esta opción te permite utilizar objetos. Para usar un objeto en un aliado, toca el objeto, "Usar en amigo" y, por último, el Yo-kai en el que lo quieras usar. Para usarlo en un enemigo, selecciona el objeto y, a continuación, "Usar en oponente".</p>
+                            </div>
+                            <img src="common/img/09_04.png" class="deco" alt="">
+                        </div>
+                        <div class="notice__wrap">
+                            <p class="column_ttl">Entablar amistad con los enemigos</p>
+                            <p class="txt">Si le das a un Yo-kai enemigo una comida que le guste, las posibilidades de que ese Yo-kai se una a ti tras el combate aumentarán. Si le ofreces su comida favorita, ¡la probabilidad será incluso mayor!</p>
+                        </div>
+                    </section>
+                    <section class="sec">
+                        <h2>Cambiar Yo-kai</h2>
+                        <p class="txt">Si haces girar la rueda Yo-kai pulsando L /R, puedes intercambiar Yo-kai entre la línea frontal y la posterior.</p>
+                    </section>
+                </div>
+            </div>
+            <footer id="footer">
+                <p class="pageTopWrap"><a href="" class="pageTop"><img src="common/img/btn_pagetop.png" width="133" height="142" alt="Inicio"></a></p>
+                <ul>
+                    <li class="prev"><a href="javascript:void(0)" class="pager_li" onclick="onLink(-1)">Anterior</a></li>
+                    <li class="next"><a href="javascript:void(0)" class="pager_li" onclick="onLink(1)">Siguiente</a></li>
+                </ul>
+            </footer>
+        </article>
+    </main>
+</body>
+
+</html>

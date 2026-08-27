@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="Content-Script-Type" content="text/javascript">
+    <meta name="robots" content="noindex,nofollow">
+    <meta name="viewport" content="width=1280,user-scalable=no">
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <title></title>
+    <link rel="stylesheet" href="common/css/q-reset.css">
+    <link rel="stylesheet" href="common/css/new_style.css">
+    <script src="common/js/jquery-2.2.4.min.js"></script>
+    <script src="common/js/run.js"></script>
+</head>
+
+<body>
+    <main id="main">
+        <nav id="nav">
+            <ul>
+                <li class="index"><a href="index.html">Introducción</a></li>
+                <li class="page02"><a href="page02.html">Controles</a></li>
+                <li class="page03"><a href="page03.html">Pantalla de la zona</a></li>
+                <li class="page04"><a href="page04.html">Acciones</a></li>
+                <li class="page05"><a href="page05.html">Lente Yo-kai</a></li>
+                <li class="page06"><a href="page06.html">Menú principal</a></li>
+                <li class="page07"><a href="page07.html">Estado de los Yo-kai</a></li>
+                <li class="page08"><a href="page08.html">Combates: Desarrollo</a></li>
+                <li class="page09"><a href="page09.html">Combates: Dar ordenes</a></li>
+                <li class="page10"><a href="page10.html">Usar servicios</a></li>
+                <li class="page11"><a href="page11.html">Servicios especiales</a></li>
+                <li class="page12"><a href="page12.html">Multijugador y NFC</a></li>
+                <li class="page13"><a href="page13.html">Información de contacto</a></li>
+            </ul>
+        </nav>
+        <article id="article" data-page="page04">
+            <div class="wrap">
+                <header id="header">
+                    <h1>Acciones</h1>
+                </header>
+                <div id="inner">
+                    <section class="sec">
+                        <h2>Desplazarse</h2>
+                        <p class="txt">Desliza el stick izquierdo en la dirección en la que quieras que se mueva tu personaje. Deslízalo suavemente para caminar.</p>
+                        <h3>Correr</h3>
+                        <div class="flxBox">
+                            <div>
+                                <p class="txt">Mueve el stick izquierdo mientras mantienes pulsado Ⓑ para correr. En algunos minijuegos, como la pesadilla súbita, aparecerá un indicador de resistencia al correr. Al correr, se consumirá tu energía. Si llega a cero, no podrás correr hasta que el indicador de energía se vuelva a llenar.</p>
+                            </div>
+                            <img src="common/img/04_01.png" class="deco" alt="">
+                        </div>
+                        <h3>Desplazarse en bicicleta</h3>
+                        <p class="txt">Una vez que tengas una bicicleta, pulsa arriba en la cruceta la para subirte a ella. (Hay ciertas zonas del mapa en las que no puedes montar en bicicleta.)</p>
+                    </section>
+                    <section class="sec">
+                        <h2>Examinar / Hablar</h2>
+                        <p class="txt">Pulsa Ⓐ en zonas donde veas ciertos iconos como<span class="icon__img"><img src="./common/img/04_icn_01.png" alt=""></span>o<span class="icon__img"><img src="./common/img/04_icn_02.png" alt=""></span>para examinarlas o hablar con personajes, Yo-kai y animales.</p>
+                    </section>
+                    <section class="sec">
+                        <h2>Abrir cofres del tesoro</h2>
+                        <p class="txt mb10">Acércate a un cofre del tesoro y pulsa Ⓐ para hacerte con el objeto que contenga. Hay varios tipos de cofres.</p>
+                        <table class="basicTbl">
+                            <tbody>
+                                <tr>
+                                    <th class="icon"><span class="icon__img"><img src="./common/img/04_icn_03.png" alt=""></span></th>
+                                    <td>Algunos volverán a aparecer tras un cierto periodo de tiempo.</td>
+                                </tr>
+                                <tr>
+                                    <th class="icon"><span class="icon__img"><img src="./common/img/04_icn_04.png" alt=""></span></th>
+                                    <td>Otros solo se pueden abrir una vez.</td>
+                                </tr>
+                                <tr>
+                                    <th class="icon"><span class="icon__img"><img src="./common/img/04_icn_05.png" alt=""></span></th>
+                                    <td>Estos solo aparecen durante la pesadilla súbita.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="notice__wrap">
+                            <p class="column_ttl">Capturar a los Yo-delincuentes</p>
+							<p class="txt">A medida que avances en la historia, podrás capturar Yo-delincuentes que se encuentren por la ciudad.
+Cuando captures a uno 3 veces, recibirás una contraseña. Introduce la contraseña obtenida en la segunda ventanilla de la Oficina de correos Borreguero para recibir un objeto.
+Ten en cuenta que las búsquedas tienen un límite de tiempo de unos días. Puedes preguntarle al Inspector Peluso para saber cuánto tiempo queda.</p>
+                        </div>
+                    </section>
+                </div>
+            </div>
+            <footer id="footer">
+                <p class="pageTopWrap"><a href="" class="pageTop"><img src="common/img/btn_pagetop.png" width="133" height="142" alt="Inicio"></a></p>
+                <ul>
+                    <li class="prev"><a href="javascript:void(0)" class="pager_li" onclick="onLink(-1)">Anterior</a></li>
+                    <li class="next"><a href="javascript:void(0)" class="pager_li" onclick="onLink(1)">Siguiente</a></li>
+                </ul>
+            </footer>
+        </article>
+    </main>
+</body>
+
+</html>

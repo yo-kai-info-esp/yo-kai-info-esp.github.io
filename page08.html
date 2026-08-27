@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="Content-Script-Type" content="text/javascript">
+    <meta name="robots" content="noindex,nofollow">
+    <meta name="viewport" content="width=1280,user-scalable=no">
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <title></title>
+    <link rel="stylesheet" href="common/css/q-reset.css">
+    <link rel="stylesheet" href="common/css/new_style.css">
+    <script src="common/js/jquery-2.2.4.min.js"></script>
+    <script src="common/js/run.js"></script>
+</head>
+
+<body>
+    <main id="main">
+        <nav id="nav">
+            <ul>
+                <li class="index"><a href="index.html">Introducción</a></li>
+                <li class="page02"><a href="page02.html">Controles</a></li>
+                <li class="page03"><a href="page03.html">Pantalla de la zona</a></li>
+                <li class="page04"><a href="page04.html">Acciones</a></li>
+                <li class="page05"><a href="page05.html">Lente Yo-kai</a></li>
+                <li class="page06"><a href="page06.html">Menú principal</a></li>
+                <li class="page07"><a href="page07.html">Estado de los Yo-kai</a></li>
+                <li class="page08"><a href="page08.html">Combates: Desarrollo</a></li>
+                <li class="page09"><a href="page09.html">Combates: Dar ordenes</a></li>
+                <li class="page10"><a href="page10.html">Usar servicios</a></li>
+                <li class="page11"><a href="page11.html">Servicios especiales</a></li>
+                <li class="page12"><a href="page12.html">Multijugador y NFC</a></li>
+                <li class="page13"><a href="page13.html">Información de contacto</a></li>
+            </ul>
+        </nav>
+        <article id="article" data-page="page08">
+            <div class="wrap">
+                <header id="header">
+                    <h1>Combates: Desarrollo</h1>
+                </header>
+                <div id="inner">
+                    <section class="sec">
+                        <p class="txt">Si tocas el símbolo de un Yo-kai cuando estés de paseo por la ciudad, o si uno aparece mientras estás explorando con tu lente, se iniciará un combate.</p>
+                        <h2>Empezar a combatir</h2>
+                        <p class="txt">Antes de empezar a luchar, puedes mover a tus Yo-kai hacia el frente o hacia atrás, así como usar objetos. El combate empezará una vez que hayas utilizado un objeto o seleccionado "¡LUCHA!".</p>
+                    </section>
+                    <section class="sec">
+                        <h2>Pantalla de combate</h2>
+                        <div class="imgBox mb30">
+                            <img src="./common/img/08_01.png" alt="" class="hikidashi">
+                        </div>
+                        <dl class="num__dl">
+                            <dt><span class="num">1</span><span class="ttl">Yo-kai enemigos</span></dt>
+                            <dd></dd>
+                            <dt><span class="num">2</span><span class="ttl">Amigos Yo-kai al frente de tu rueda Yo-kai</span></dt>
+                            <dd><p class="mb30">La barra que se encuentra debajo del nombre de cada Yo-kai indica sus PV, los cuales disminuyen cuando los Yo-kai reciben ataques. Si los PV se agotan, los Yo-kai se desmayarán. El icono <span class="icon__img"><img src="./common/img/08_icn_01.png" alt=""></span> es el animámetro, que se va rellenando de manera gradual. Una vez que esté lleno, podrás usar un animáximum.</p></dd>
+                            <dt><span class="num">3</span><span class="ttl">Rueda Yo-kai</span></dt>
+                            <dd>
+                                Muestra la formación de tus amigos Yo-kai. Los tres que se encuentren en la parte superior formarán el frente a la hora de luchar contra el enemigo. Acontinuación, podrás preparar a los tres Yo-kai de la parte inferior para que pasen al frente en el momento adecuado pulsando L / R.
+                            </dd>
+                            <dt><span class="num">4</span><span class="ttl">Acelerar el combate</span></dt>
+                            <dd>
+                                <p class="mb30">Pulsa ZR para aumentar la velocidad del combate. Vuelve a pulsarlo para recuperar la velocidad normal.</p>
+                            </dd>
+                            <dt><span class="num">5</span><span class="ttl">Opciones</span></dt>
+                            <dd>
+                                <p class="mb30">Las cuatro opciones que puedes seleccionar durante un combate son: animáximum, purificar, objetivo y objetos.</p>
+                            </dd>
+                        </dl>
+                        <div class="notice__wrap">
+                            <p class="column_ttl">Unidad</p>
+                            <p class="txt">Si tu línea frontal cuenta con Yo-kai de la misma tribu juntos, ¡se creará una unidad! Cada tribu tiene efectos de unidad diferentes. Para formar una unidad son suficientes dos Yo-kai, pero si los tres Yo-kai de la línea frontal pertenecen a la misma tribu, ¡la unidad será aún más fuerte!
+</p>
+                        </div>
+                    </section>
+                    <section class="sec">
+                        <h2>Normas de combate</h2>
+                        <p class="txt">Los Yo-kai que se encuentren en tu rueda Yo-kai participarán en el combate. Los tres que se encuentren al frente serán los que luchen activamente contra los enemigos. Utiliza las opciones para dar órdenes a tus Yo-kai y cambia de Yo-kai cuando lo estimes necesario.</p>
+                    </section>
+                    <section class="sec">
+                        <h2>Acciones de los amigos Yo-kai</h2>
+                        <p class="txt">Los Yo-kai atacarán y utilizarán su técnica de manera automática. Las acciones que realicen variarán en función de su carácter.</p>
+                    </section>
+                    <section class="sec">
+                        <h2>Terminar un combate</h2>
+                        <div class="flxBox">
+                            <div class="txt">
+                                <p>Ganarás cuando hayas derrotado a todos los Yo-kai enemigos. Al ganar un combate, recibirás puntos de experiencia y dinero, así como objetos. Puede que algunos de los Yo-kai a los que venzas quieran entablar amistad contigo.</p>
+                            </div>
+                            <img src="./common/img/08_02.png" class="deco" alt="">
+                        </div>
+                        <h3>Subir de nivel</h3>
+                        <p class="txt">Los Yo-kai subirán de nivel tras conseguir un número determinado de puntos de experiencia. Los atributos, como la fuerza y el espíritu, aumentarán cuando el Yo-kai suba de nivel.</p>
+                        <h3>Huir de un combate</h3>
+                        <p class="txt mb10">Podrás huir de un combate utilizando un muñeco de trapo.</p>
+                        <p class="notice">※ No obstante, hay ciertos enemigos de los que no puedes escapar.</p>
+                        <h3>Rendirse</h3>
+                        <div class="flxBox">
+                            <div class="txt">
+                                <p>Pulsa el botón + para abrir el menú de pausa y selecciona "Rendirse"para abandonar el combate de inmediato. Hacer esto contará como una derrota.</p>
+                            </div>
+                            <img src="./common/img/08_03.png" class="deco" alt="">
+                        </div>
+                        <h3>Si pierdes</h3>
+                        <p class="txt">Si todos tus Yo-kai aliados son derrotados, perderás. Si pierdes un combate, regresarás a un lugar cercano.</p>
+                        <div class="notice__wrap">
+                            <p class="column_ttl">Espiritación</p>
+                            <p class="txt mb30">Durante un combate, otros Yo-kai enemigos o amigos pueden espiritar a tus Yo-kai. Si los efectos de la espiritación son malos, utiliza la opción "Purificar" para deshacerte de ellos.</p>
+                            <table class="basicTbl">
+                                <tbody>
+                                    <tr>
+                                        <th class="icon"><span class="icon__img"><img src="./common/img/08_icn_02.png" alt=""></span></th>
+                                        <td>Aumenta la FUE.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="icon"><span class="icon__img"><img src="./common/img/08_icn_03.png" alt=""></span></th>
+                                        <td>Aumenta la DEF.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="icon"><span class="icon__img"><img src="./common/img/08_icn_04.png" alt=""></span></th>
+                                        <td>Aumenta el ESP.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="icon"><span class="icon__img"><img src="./common/img/08_icn_05.png" alt=""></span></th>
+                                        <td>Aumenta la VEL.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="icon"><span class="icon__img"><img src="./common/img/08_icn_06.png" alt=""></span></th>
+                                        <td>Aumenta todos los atributos.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="icon"><span class="icon__img"><img src="./common/img/08_icn_07.png" alt=""></span></th>
+                                        <td>Restaura PV gradualmente.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="icon"><span class="icon__img"><img src="./common/img/08_icn_08.png" alt=""></span></th>
+                                        <td>Provoca al enemigo y atrae sus ataques.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="icon"><span class="icon__img"><img src="./common/img/08_icn_09.png" alt=""></span></th>
+                                        <td>Resulta complicado ser fijado como objetivo.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="icon"><span class="icon__img"><img src="./common/img/08_icn_10.png" alt=""></span></th>
+                                        <td>Reduce la FUE.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="icon"><span class="icon__img"><img src="./common/img/08_icn_11.png" alt=""></span></th>
+                                        <td>Reduce la DEF.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="icon"><span class="icon__img"><img src="./common/img/08_icn_12.png" alt=""></span></th>
+                                        <td>Reduce el ESP.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="icon"><span class="icon__img"><img src="./common/img/08_icn_13.png" alt=""></span></th>
+                                        <td>Reduce la VEL.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="icon"><span class="icon__img"><img src="./common/img/08_icn_14.png" alt=""></span></th>
+                                        <td>Reduce todos los atributos.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="icon"><span class="icon__img"><img src="./common/img/08_icn_15.png" alt=""></span></th>
+                                        <td>Los PV se reducen gradualmente.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="icon"><span class="icon__img"><img src="./common/img/08_icn_16.png" alt=""></span></th>
+                                        <td>Impide al Yo-kai actuar en ciertas ocasiones.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="icon"><span class="icon__img"><img src="./common/img/08_icn_17.png" alt=""></span></th>
+                                        <td>Causa confusión y es probable que el Yo-kai ataque a los aliados.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="icon"><span class="icon__img"><img src="./common/img/08_icn_18.png" alt=""></span></th>
+                                        <td>Hace que los Yo-kai tiren dinero. ¡Ten cuidado de no perder el dinero que tanto te ha costado ganar!</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </section>
+                </div>
+            </div>
+            <footer id="footer">
+                <p class="pageTopWrap"><a href="" class="pageTop"><img src="common/img/btn_pagetop.png" width="133" height="142" alt="Inicio"></a></p>
+                <ul>
+                    <li class="prev"><a href="javascript:void(0)" class="pager_li" onclick="onLink(-1)">Anterior</a></li>
+                    <li class="next"><a href="javascript:void(0)" class="pager_li" onclick="onLink(1)">Siguiente</a></li>
+                </ul>
+            </footer>
+        </article>
+    </main>
+</body>
+
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="Content-Script-Type" content="text/javascript">
+    <meta name="robots" content="noindex,nofollow">
+    <meta name="viewport" content="width=1280,user-scalable=no">
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <title></title>
+    <link rel="stylesheet" href="common/css/q-reset.css">
+    <link rel="stylesheet" href="common/css/new_style.css">
+    <script src="common/js/jquery-2.2.4.min.js"></script>
+    <script src="common/js/run.js"></script>
+</head>
+
+<body>
+    <main id="main">
+        <nav id="nav">
+            <ul>
+                <li class="index"><a href="index.html">Introducción</a></li>
+                <li class="page02"><a href="page02.html">Controles</a></li>
+                <li class="page03"><a href="page03.html">Pantalla de la zona</a></li>
+                <li class="page04"><a href="page04.html">Acciones</a></li>
+                <li class="page05"><a href="page05.html">Lente Yo-kai</a></li>
+                <li class="page06"><a href="page06.html">Menú principal</a></li>
+                <li class="page07"><a href="page07.html">Estado de los Yo-kai</a></li>
+                <li class="page08"><a href="page08.html">Combates: Desarrollo</a></li>
+                <li class="page09"><a href="page09.html">Combates: Dar ordenes</a></li>
+                <li class="page10"><a href="page10.html">Usar servicios</a></li>
+                <li class="page11"><a href="page11.html">Servicios especiales</a></li>
+                <li class="page12"><a href="page12.html">Multijugador y NFC</a></li>
+                <li class="page13"><a href="page13.html">Información de contacto</a></li>
+            </ul>
+        </nav>
+        <article id="article" data-page="page05">
+            <div class="wrap">
+                <header id="header">
+                    <h1>Lente Yo-kai</h1>
+                </header>
+                <div id="inner">
+                    <section class="sec">
+                        <h2>Utilizar la lente Yo-kai</h2>
+                        <div class="flxBox">
+                            <div class="txt">
+                                <p>Si algo te parece sospechoso, pulsa Ⓨ para utilizar la lente y echar un vistazo más de cerca. Puede que hasta encuentres un Yo-kai.</p>
+                            </div>
+                            <img src="./common/img/05_01.png" class="deco" alt="">
+                        </div>
+                        <div class="notice__wrap">
+                            <p class="column_ttl">Modo radar</p>
+                            <p class="txt">Examina una zona que parezca sospechosa y utiliza el stick izquierdo para inspeccionarla con tu lente Yo-kai.</p>
+                        </div>
+                        <h3>Buscar Yo-kai</h3>
+                        <div class="flxBox">
+                            <div class="txt">
+                                <p>Cuando encuentres un Yo-kai, mantén la lente sobre él y el indicador se irá llenando. Una vez que esté lleno, ¡podrás ver al Yo-kai!</p>
+                            </div>
+                            <img src="./common/img/05_02.png" class="deco" alt="">
+                        </div>
+                        <h3>Cazar insectos</h3>
+                        <div class="flxBox">
+                            <div class="txt">
+                                <p>Centra la lente en un insecto y, a continuación, pulsa el botón A. Pulsa Ⓐ para detener el indicador giratorio. Si consigues pararlo en una de las barras amarillas, ¡el insecto será tuyo!<br>Utiliza sirope negro pulsando Ⓨ para aumentar el número de barras en la rueda y que así sea más sencillo cazar al insecto.</p>
+                            </div>
+                            <img src="./common/img/05_03.png" class="deco" alt="">
+                        </div>
+                        <h3>Pescar</h3>
+                        <div class="flxBox">
+                            <div class="txt">
+                                <p class="mb10">Centra la lente en un pez y, a continuación, pulsa el botón A. Pulsa Ⓐ para detener el indicador giratorio. Si consigues pararlo en una de las barras amarillas, ¡atraparás al pez!<br>Utiliza cebo para peces pulsando Ⓨ para aumentar el número de barras en la rueda y que así sea más sencillo atrapar al pez.</p>
+                                <p class="notice">※ Para poder pescar, necesitas una caña de pescar.</p>
+                            </div>
+                            <img src="./common/img/05_04.png" class="deco" alt="">
+                        </div>
+                    </section>
+                </div>
+            </div>
+            <footer id="footer">
+                <p class="pageTopWrap"><a href="" class="pageTop"><img src="common/img/btn_pagetop.png" width="133" height="142" alt="Inicio"></a></p>
+                <ul>
+                    <li class="prev"><a href="javascript:void(0)" class="pager_li" onclick="onLink(-1)">Anterior</a></li>
+                    <li class="next"><a href="javascript:void(0)" class="pager_li" onclick="onLink(1)">Siguiente</a></li>
+                </ul>
+            </footer>
+        </article>
+    </main>
+</body>
+
+</html>

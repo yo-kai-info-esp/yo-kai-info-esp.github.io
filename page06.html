@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="noindex,nofollow">
+    <meta name="viewport" content="width=1280,user-scalable=no">
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <title></title>
+    <link rel="stylesheet" href="common/css/q-reset.css">
+    <link rel="stylesheet" href="common/css/new_style.css">
+    <script src="common/js/jquery-2.2.4.min.js"></script>
+    <script src="common/js/run.js"></script>
+</head>
+
+<body>
+    <main id="main">
+        <nav id="nav">
+            <ul>
+                <li class="index"><a href="index.html">Introducción</a></li>
+                <li class="page02"><a href="page02.html">Controles</a></li>
+                <li class="page03"><a href="page03.html">Pantalla de la zona</a></li>
+                <li class="page04"><a href="page04.html">Acciones</a></li>
+                <li class="page05"><a href="page05.html">Lente Yo-kai</a></li>
+                <li class="page06"><a href="page06.html">Menú principal</a></li>
+                <li class="page07"><a href="page07.html">Estado de los Yo-kai</a></li>
+                <li class="page08"><a href="page08.html">Combates: Desarrollo</a></li>
+                <li class="page09"><a href="page09.html">Combates: Dar ordenes</a></li>
+                <li class="page10"><a href="page10.html">Usar servicios</a></li>
+                <li class="page11"><a href="page11.html">Servicios especiales</a></li>
+                <li class="page12"><a href="page12.html">Multijugador y NFC</a></li>
+                <li class="page13"><a href="page13.html">Información de contacto</a></li>
+            </ul>
+        </nav>
+        <article id="article" data-page="page06">
+            <div class="wrap">
+                <header id="header">
+                    <h1>Menú principal</h1>
+                </header>
+                <div id="inner">
+                    <section class="sec">
+                        <p class="txt">Pulsa Ⓧ durante la partida para abrir el menú principal.</p>
+                        <h2>Pantalla del menú principal</h2>
+                        <div class="imgBox mb20">
+                            <img src="./common/img/06_01.png" alt="" class="hikidashi">
+                        </div>
+                        <dl class="num__dl">
+                            <dt><span class="num">1</span><span class="ttl">Menú</span></dt>
+                            <dd></dd>
+                            <dt><span class="num">2</span><span class="ttl">Dinero</span></dt>
+                            <dd></dd>
+                            <dt><span class="num">3</span><span class="ttl">Tiradas de hoy</span></dt>
+                            <dd>
+                                <p class="mb30">Muestra el número de tiradas de la expendekai restantes que puedes hacer hoy / número máximo de tiradas que puedes hacer hoy.</p>
+                            </dd>
+                            <dt><span class="num">4</span><span class="ttl">Amigos Yo-kai</span></dt>
+                            <dd>
+                                <p class="mb30">Estos son los Yo-kai que se encuentran en tu rueda Yo-kai</p>
+                            </dd>
+                            <dt><span class="num">5</span><span class="ttl">Rango del Yo-kai Watch</span></dt>
+                            <dd>
+                                <p class="mb30">¡Tu rango del Yo-kai Watch aumentará al completar ciertas misiones; entonces, podrás abrir más relojes cerrados y encontrar Yo-kai de rango mayor utilizando tu radar Yo-kai!</p>
+                            </dd>
+                        </dl>
+                    </section>
+                    <section class="sec">
+                        <h2>Menú: Medallas Yo-kai</h2>
+                        <p class="txt mb10">Aquí puedes consultar el estado de tus amigos Yo-kai o elegir a los que quieres que combatan junto a ti.</p>
+                        <p class="notice">※ Solo puedes cambiar los miembros de tu equipo hablando con Ignóculo o mediante el Medálium Yo-kai en el dormitorio del personaje principal.</p>
+                        <h3>En uso</h3>
+                        <div class="flxBox mb30">
+                            <div class="txt">
+                                <p>Aquí puedes cambiar la formación y el equipamiento de los Yo-kai que se encuentren en tu rueda Yo-kai.</p>
+                                 <p class="notice">※ Mientras mantengas pulsado L o R, el círculo girará y podrás intercambiar tus amigos Yo-kai de la parte superior e inferior en tu rueda Yo-kai.</p>
+                            </div>
+                            <img src="./common/img/06_02.png" class="deco" alt="">
+                        </div>
+                        <table class="basicTbl">
+                            <tbody>
+                                <tr>
+                                    <th>Cambiar</th>
+                                    <td>Aquí puedes cambiar a los Yo-kai en uso por otros que hayas conseguido.</td>
+                                </tr>
+                                <tr>
+                                    <th>Poner objeto</th>
+                                    <td>Aquí puedes equipar a los Yo-kai con objetos. Cada Yo-kai se puede equipar con un único objeto.</td>
+                                </tr>
+                                <tr>
+                                    <th>Cambiar pose</th>
+                                    <td>Aquí puedes elegir la pose de victoria de tus Yo-kai.</td>
+                                </tr>
+                                <tr>
+                                    <th>Liberar</th>
+                                    <td>Aquí puedes dejar libre a uno de tus Yo-kai, pero ¡recuerda que es una decisión irreversible!</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <h3>Coleccionadas</h3>
+                        <div class="flxBox mb30">
+                            <div class="txt">
+                                <p>Esencialmente, este menú es igual al menú En uso. La diferencia radica en que aquí puedes seleccionar "Insertar" para incluir a un Yo-kai en la rueda Yo-kai.</p>
+                            </div>
+                            <img src="./common/img/06_03.png" class="deco" alt="">
+                        </div>
+                        <div class="notice__wrap">
+                            <p class="column_ttl">Grupo automático</p>
+                            <p class="txt">Cuando hables con Ignóculo, pulsa el botón + para crear automáticamente un equipo de combate con tus amigos Yo-kai. Selecciona "Grupo automático" repetidas veces para obtener diferentes alineaciones, como por ejemplo aquellas que favorecen a los Yo-kai con niveles mayores o a los orientados a la defensa.
+</p>
+                        </div>
+                    </section>
+                    <section class="sec">
+                        <h2>Menú: Inventario</h2>
+                        <div class="flxBox">
+                            <div class="txt">
+                                <p>Aquí puedes consultar y utilizar los objetos que poseas actualmente.</p>
+                            </div>
+                            <img src="./common/img/06_04.png" class="deco" alt="">
+                        </div>
+                        <h3>Tipos de objetos</h3>
+                        <table class="basicTbl mb30">
+                            <tbody>
+                                <tr>
+                                    <th>Comida</th>
+                                    <td>Dales comida a tus amigos Yo-kai para restaurar sus PV o su animámetro. Dásela a tus enemigos durante un combate para aumentar la probabilidad de que quieran ser tus amigos cuando este haya finalizado.</td>
+                                </tr>
+                                <tr>
+                                    <th>Objetos</th>
+                                    <td>Aquí se encuentran todos los insectos y peces que has capturado hasta la fecha. Puedes venderlos o intercambiarlos por objetos en Caza y Sedal.</td>
+                                </tr>
+                                <tr>
+                                    <th>Animales</th>
+                                    <td>Se pueden utilizar objetos para reanimar a Yo-kai o cambiar su carácter. Algunos pueden utilizarse en la fusión.</td>
+                                </tr>
+                                <tr>
+                                    <th>Equipamiento</th>
+                                    <td>Estos son los objetos con los que puedes equipar a tus Yo-kai.</td>
+                                </tr>
+                                <tr>
+                                    <th>Objetos clave</th>
+                                    <td>Se trata de objetos importantes que recibirás al completar misiones o a lo largo de la historia principal.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </section>
+                    <section class="sec">
+                        <h2>Menu: Opciones</h2>
+                        <p class="txt mb10">Aquí puedes cambiar la configuración del juego.</p>
+                        <table class="basicTbl mb30">
+                            <tbody>
+                                <tr>
+                                    <th>Música</th>
+                                    <td>Aquí puedes cambiar el volumen de la música.</td>
+                                </tr>
+                                <tr>
+                                    <th>Efectos</th>
+                                    <td>Aquí puedes cambiar el volumen de los efectos de sonido.</td>
+                                </tr>
+                                <tr>
+                                    <th>Mostrar reloj</th>
+                                    <td>Si seleccionas "Fijo" en esta opción, el reloj se mostrará en todo momento.</td>
+                                </tr>
+                                <tr>
+                                    <th>Objetivo</th>
+                                    <td>Si seleccionas "Fijo" en esta opción, tu objetivo se mostrará en todo momento.</td>
+                                </tr>
+                                <tr>
+                                    <th>Indicador</th>
+                                    <td>Aquí puedes activar o desactivar la flecha que señala hacia tu objetivo.</td>
+                                </tr>
+                                <tr>
+                                    <th>Rotación de la cámara</th>
+                                    <td>Aquí pudes elegir entre tener los controles de cámara normales e invertidos.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </section>
+                    <section class="sec">
+                        <h2>Menú: Misiones</h2>
+                        <p class="txt">Aquí puedes consultar los detalles de las misiones en las que participes. Pulsa Ⓧ para abrir el mapa en la pantalla superior y ver adónde debes ir para completar la misión.</p>
+                        <h3>Petición</h3>
+                        <p class="txt">Se trata de peticiones de la gente de la ciudad. Puedes aceptar tantas como desees.</p>
+                        <h3>Tarea</h3>
+                        <p class="txt">Se trata de tareas más pequeñas. Puedes aceptar un máximo de cinco al mismo tiempo.</p>
+                        <h3>Historia</h3>
+                        <p class="txt">Son las misiones de la historia principal.</p>
+                    </section>
+                    <section class="sec">
+                        <h2>Menú: Récords</h2>
+                        <p class="txt mb10">Aquí puedes ver diferentes tipos de información:</p>
+                        <table class="basicTbl mb30">
+                            <tbody>
+                                <tr>
+                                    <th>Récords de (nombre del jugador)</th>
+                                    <td>Permite consultar tus registros de juego.</td>
+                                </tr>
+                                <tr>
+                                    <th>Tus récords de Yo-kai</th>
+                                    <td>Permite consultar el progreso del Medálium de Yo-kai y tus Yo-kai favoritos.</td>
+                                </tr>
+                                <tr>
+                                    <th>Registro de batallas</th>
+                                    <td>Permite consultar tus registros de combates contra otros jugadores.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </section>
+                    <section class="sec">
+                        <h2>Menú: Medálium de Yo-kai</h2>
+                        <p class="txt">Puedes ver información acerca de los Yo-kai y verlos más de cerca.</p>
+                        <div class="notice__wrap">
+                            <p class="column_ttl">Yo-kai Legendarios</p>
+                            <p class="txt">Cuando reúnas todas las medallas de una página Legendaria del Medálium de Yo-kai, aparecerá un Yo-kai Legendario, que se volverá en tu amigo.</p>
+                        </div>
+                    </section>
+                    <section class="sec">
+                        <h2>Menú: Diario</h2>
+                        <p class="txt">Aquí puedes guardar tu progreso.</p>
+                    </section>
+                    <section class="sec">
+                        <h2>Menú: Zonas Yo-kai</h2>
+                        <p class="txt">Consulta información acerca de las zonas donde se rumorea que hay Yo-kai.</p>
+                    </section>
+                    <section class="sec">
+                        <h2>Menú: Ayuda</h2>
+                        <p class="txt">Consulta los controles y consejos acerca de cómo jugar.</p>
+                    </section>
+                </div>
+            </div>
+            <footer id="footer">
+                <p class="pageTopWrap"><a href="" class="pageTop"><img src="common/img/btn_pagetop.png" width="133" height="142" alt="Inicio"></a></p>
+                <ul>
+                    <li class="prev"><a href="javascript:void(0)" class="pager_li" onclick="onLink(-1)">Anterior</a></li>
+                    <li class="next"><a href="javascript:void(0)" class="pager_li" onclick="onLink(1)">Siguiente</a></li>
+                </ul>
+            </footer>
+        </article>
+    </main>
+</body>
+
+</html>

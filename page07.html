@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="Content-Script-Type" content="text/javascript">
+    <meta name="robots" content="noindex,nofollow">
+    <meta name="viewport" content="width=1280,user-scalable=no">
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <title></title>
+    <link rel="stylesheet" href="common/css/q-reset.css">
+    <link rel="stylesheet" href="common/css/new_style.css">
+    <script src="common/js/jquery-2.2.4.min.js"></script>
+    <script src="common/js/run.js"></script>
+</head>
+
+<body>
+    <main id="main">
+        <nav id="nav">
+            <ul><li class="index"><a href="index.html">Introducción</a></li>
+                <li class="page02"><a href="page02.html">Controles</a></li>
+                <li class="page03"><a href="page03.html">Pantalla de la zona</a></li>
+                <li class="page04"><a href="page04.html">Acciones</a></li>
+                <li class="page05"><a href="page05.html">Lente Yo-kai</a></li>
+                <li class="page06"><a href="page06.html">Menú principal</a></li>
+                <li class="page07"><a href="page07.html">Estado de los Yo-kai</a></li>
+                <li class="page08"><a href="page08.html">Combates: Desarrollo</a></li>
+                <li class="page09"><a href="page09.html">Combates: Dar ordenes</a></li>
+                <li class="page10"><a href="page10.html">Usar servicios</a></li>
+                <li class="page11"><a href="page11.html">Servicios especiales</a></li>
+                <li class="page12"><a href="page12.html">Multijugador y NFC</a></li>
+                <li class="page13"><a href="page13.html">Información de contacto</a></li>
+            </ul>
+        </nav>
+        <article id="article" data-page="page07">
+            <div class="wrap">
+                <header id="header">
+                    <h1>Estado de los Yo-kai</h1>
+                </header>
+                <div id="inner">
+                    <p class="txt">Puedes consultar el estado de tus amigos Yo-kai en el apartado Medallas del menú principal. Pulsa Ⓧ para cambiar la información que se muestra en pantalla.
+</p>
+                    <section class="sec">
+                        <h2>Estado (1)</h2>
+                        <div class="imgBox mb30">
+                            <img src="./common/img/07_01.png" alt="" class="hikidashi">
+                        </div>
+                        <dl class="num__dl">
+                            <dt><span class="num">1</span><span class="ttl">Nombre y tribu</span></dt>
+                            <dd>Los Yo-kai pertenecen a una de estas ocho tribus:</dd>
+                        </dl>
+                        <table class="basicTbl mb30">
+                            <tbody>
+                                <tr>
+                                    <th><span class="icon__img"><img src="./common/img/07_icn_01.png" alt=""></span>Valiente</th>
+                                    <td>Audaces e impasibles.</td>
+                                </tr>
+                                <tr>
+                                    <th><span class="icon__img"><img src="./common/img/07_icn_02.png" alt=""></span>Misteriosa</th>
+                                    <td>Nunca sabes lo que están pensando.</td>
+                                </tr>
+                                <tr>
+                                    <th><span class="icon__img"><img src="./common/img/07_icn_03.png" alt=""></span>Robusta</th>
+                                    <td>De mentalidad y cuerpo fuertes.</td>
+                                </tr>
+                                <tr>
+                                    <th><span class="icon__img"><img src="./common/img/07_icn_04.png" alt=""></span>Guapa</th>
+                                    <td>¡Solo querrás abrazarlos!</td>
+                                </tr>
+                                <tr>
+                                    <th><span class="icon__img"><img src="./common/img/07_icn_05.png" alt=""></span>Amable</th>
+                                    <td>Afables y con un corazón de oro.</td>
+                                </tr>
+                                <tr>
+                                    <th><span class="icon__img"><img src="./common/img/07_icn_06.png" alt=""></span>Oscura</th>
+                                    <td>Siempre están maquinando cosas...</td>
+                                </tr>
+                                <tr>
+                                    <th><span class="icon__img"><img src="./common/img/07_icn_07.png" alt=""></span>Siniestra</th>
+                                    <td>Te harán estremecerte.</td>
+                                </tr>
+                                <tr>
+                                    <th><span class="icon__img"><img src="./common/img/07_icn_08.png" alt=""></span>Escurridiza</th>
+                                    <td>¡Escurridizos en todos los aspectos!</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <dl class="num__dl">
+                            <dt><span class="num">2</span><span class="ttl">Rango Yo-kai</span></dt>
+                            <dd><p class="mb30">El rango de los Yo-kai va desde el E hasta el S . Cuanto mayor sea el rango, ¡mejor será el Yo-kai!</p></dd>
+                            <dt><span class="num">3</span><span class="ttl">Nivel y experiencia necesaria para alcanzar el siguiente nivel</span></dt>
+                            <dd></dd>
+                            <dt><span class="num">4</span><span class="ttl">Animámetro y PV</span></dt>
+                            <dd><p class="mb30">Se muestra el nivel actual y el nivel máximo de PV.</p></dd>
+                            <dt><span class="num">5</span><span class="ttl">Objeto en uso</span></dt>
+                            <dd></dd>
+                            <dt><span class="num">6</span><span class="ttl">Atributos</span></dt>
+                            <dd></dd>
+                        </dl>
+                        <table class="basicTbl mb30">
+                            <tbody>
+                                <tr>
+                                    <th>FUE</th>
+                                    <td>Influye en la potencia del ataque.</td>
+                                </tr>
+                                <tr>
+                                    <th>DEF</th>
+                                    <td>Influye en la potencia de la defensa.</td>
+                                </tr>
+                                <tr>
+                                    <th>ESP</th>
+                                    <td>Influye en la eficacia de las técnicas.</td>
+                                </tr>
+                                <tr>
+                                    <th>VEL</th>
+                                    <td>Influye en el orden de los ataques.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <dl class="num__dl">
+                            <dt><span class="num">7</span><span class="ttl">Carácter y habilidad del Yo-kai</span></dt>
+                            <dd></dd>
+                        </dl>
+                    </section>
+                    <section class="sec">
+                        <h2>Estado (2)</h2>
+                        <p class="txt mb10">Aquí verás información acerca del Yo-kai, como el animáximum y la técnica que puede usar en los combates.</p>
+                        <div class="imgBox mb30">
+                            <img src="./common/img/07_02.png" alt="" class="hikidashi">
+                        </div>
+                        <dl class="num__dl">
+                            <dt><span class="num">1</span><span class="ttl">Nivel</span></dt>
+                            <dd><p class="mb30">Tus ataques subirán de nivel y se volverán más potentes a medida que los vayas usando.</p></dd>
+                            <dt><span class="num">2</span><span class="ttl">Elemento</span></dt>
+                            <dd>Si atacas con un movimiento del elemento contra el que tu enemigo sea vulnerable, le infligirás más daño.</dd>
+                        </dl>
+                        <table class="basicTbl">
+                            <tbody>
+                                <tr>
+                                    <th><span class="icon__img"><img src="./common/img/07_icn_09.png" alt=""></span>Fuego</th>
+                                    <td>Inflige daño con fuego abrasador.</td>
+                                </tr>
+                                <tr>
+                                    <th><span class="icon__img"><img src="./common/img/07_icn_10.png" alt=""></span>Agua</th>
+                                    <td>Inflige daño con una intensa tromba de agua.</td>
+                                </tr>
+                                <tr>
+                                    <th><span class="icon__img"><img src="./common/img/07_icn_11.png" alt=""></span>Relámpago</th>
+                                    <td>Inflige daño mediante rayos.</td>
+                                </tr>
+                                <tr>
+                                    <th><span class="icon__img"><img src="./common/img/07_icn_12.png" alt=""></span>Tierra</th>
+                                    <td>Inflige daño a través de piedras y terremotos.</td>
+                                </tr>
+                                <tr>
+                                    <th><span class="icon__img"><img src="./common/img/07_icn_13.png" alt=""></span>Hielo</th>
+                                    <td>Inflige daño con hielo glacial.</td>
+                                </tr>
+                                <tr>
+                                    <th><span class="icon__img"><img src="./common/img/07_icn_14.png" alt=""></span>Viento</th>
+                                    <td>Inflige daño a través de la manipulación del viento.</td>
+                                </tr>
+                                <tr>
+                                    <th><span class="icon__img"><img src="./common/img/07_icn_15.png" alt=""></span>Absorción</th>
+                                    <td>Utiliza un poder misterioso para absorber PV de un enemigo.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </section>
+                </div>
+            </div>
+            <footer id="footer">
+                <p class="pageTopWrap"><a href="" class="pageTop"><img src="common/img/btn_pagetop.png" width="133" height="142" alt="Inicio"></a></p>
+                <ul>
+                    <li class="prev"><a href="javascript:void(0)" class="pager_li" onclick="onLink(-1)">Anterior</a></li>
+                    <li class="next"><a href="javascript:void(0)" class="pager_li" onclick="onLink(1)">Siguiente</a></li>
+                </ul>
+            </footer>
+        </article>
+    </main>
+</body>
+
+</html>
